@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehedihas</title>
+</head>
+<style>
+    .container{
+        width: 100% ;
+        height: 5906px ;
+        display: flex ;
+        border: 1px solid black ;
+        justify-content: center; 
+        background-color:  #111827;
+    }
+    .container_small{
+        width: 375px ;
+        height: 5906px ;
+        display: flex ;
+        flex-direction: column;
+    }
+    .navbar{
+        width: 375px ;
+        height: 88px;
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        width: 95.16px ;
+        height: 20px ;
+        margin-top: 30px ;
+        margin-left: 15px ;
+    }
+    .button1{
+        flex-direction: row ;
+        display: flex ;
+        margin-left: 150px;
+        color: white;
+        font-size: 20px; justify-content: center ;
+        text-align: center; align-items: center;
+    }
+    .banner{
+        width: 375px;
+        height: 420px;
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+    .title{
+        font-size: 17px;
+        margin-top: 25px;
+    }
+    .play-button{
+        width: 64px ;
+        height: 64px ;
+        justify-content: center ;
+        align-items: center ;
+        display: flex;
+        padding-top: 30px ;
+        margin-left: 120px;
+    }
+    .my_work{
+        width: 375px;
+        height: 1780px ;
+        display: flex;
+        flex-direction: column;
+    }
+    .my_work_0{
+        width: 375px;
+        height: 164px;
+        display: flex;
+        flex-direction: column ;
+    }
+    .my_work_info{
+        width: 375px;
+        height: 116px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .my_work_button{
+        width: 375px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .tag {
+        font-size: 14px;
+        justify-content: center ;
+        align-items: center ;
+        display: flex ;
+        flex-direction: row ;
+        padding-left: 20px ;
+    }
+    .tag.yellow {
+        color: #EAB308;
+    }
+    .tag.blue {
+        color: white;
+    }
+    .tag.blue2 {
+        color: white; 
+    }
+    .my_work_img{
+        width: 375px;
+        height: 1408px;
+        display: flex ;
+        flex-direction: column;
+    }
+    .item2
+    {
+        text-align: center;
+        padding-top: 40px;
+
+    }
+    .text1{
+        flex-direction: row;
+        color: white;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+    }
+    .text2{
+        flex-direction: row;
+        color: white;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+
+    }
+    .text3{
+        flex-direction: row;
+        color: white;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+    }
+    .item3{
+        width: 5px;
+        height: 5px;
+        display: flex;
+        justify-content: center;
+        padding-left: 50px;
+        
+    }
+    .my_work_button0{
+        width: 375px;
+        height: 208px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .kind_words{
+        width: 375px;
+        height: 1672px;
+        display: flex;
+        flex-direction: column;
+    }
+    .title2{
+        width: 375px;
+        height: 92px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .all_comment{
+        width: 327px;
+        height: 1496px ;
+        display: flex;
+        margin-left: 24px ;
+        flex-direction: column;
+    }
+    .harald_pfeifer{
+        width: 297px;
+        height: 228px;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: left;
+        padding-left: 30px;
+        font-size: 18px;
+        border-radius: 15px;
+    }
+    .valenthino{
+        width: 297px;
+        height: 300px;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        font-size: 18px;
+        color: white;
+        border-radius: 15px;
+    }
+    .geoff_crutcher{
+        width: 297px;
+        height: 444px;
+        border: 1px solid white;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        font-size: 18px;
+        border-radius: 15px;
+    }
+    .space1{
+        width: 375px ;
+        height: 30px ;
+    }
+    .space2{
+        width: 327px  ;
+        height: 20px ;
+    }
+    .space3{
+        width:  327px ;
+        height: 20px ;
+    }
+    .space4{
+        width: 327px  ;
+        height: 20px ;
+    }
+    .sources{
+        width: 375px;
+        height: 634px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sources_1{
+        width: 327px;
+        height: 466px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-left: 24px;
+    }
+    .sources_info{
+        width: 327px;
+        height: 116px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+    .space5{
+        width: 327px;
+        height: 72px;
+        display: flex;
+    }
+    .sources_img{
+        width: 327px;
+        height: 206px;
+        display: flex;
+      
+    }
+    .sources_img_button{
+        width: 327px ;
+        height: 72px ;
+        flex-direction: row; display: flex; justify-content: space-between; 
+        align-items: center; text-align: center;
+    }
+    .itemm10{
+        font-size: 18px;
+        justify-content: left; text-align: left; align-items: center;
+    }
+    .itemm11{
+        width: 48px; height: 48px;
+    }
+    .sources_button{
+        width: 375px ;
+        height: 168px;
+        display: flex;
+        justify-content: center; text-align: center;
+        align-items: center;
+    }
+    .mehedi_hasan{
+        width: 375px; height: 1192px;
+        flex-direction: column; display: flex;
+        justify-content: center; 
+        align-items: center; text-align: center;
+    }
+    .my_story{
+        width: 327px; height: 64px; 
+        justify-content: center; 
+        align-items: center; text-align: center;
+        display: flex;
+    }
+    .itemm13{
+        color: white;
+        font-size: 24px; font-weight: 700;
+    }
+    .all_story{
+        width: 327px; height: 1040px;
+        margin-top: 20px; flex-direction: column;
+        justify-content: center; text-align: center; align-items: center;
+        display: flex;
+    }
+    .mehedi_img{
+        width: 182px; height: 272px; display: flex;
+    }
+    .mehedi_name{
+        width: 269px; height: 90px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center ; align-items: center;
+        text-align: center;
+    }
+    .itemm15{
+        color: white;
+        font-size: 20px; font-weight: 700;
+    }
+    .itemm16{
+        color: white;
+        font-size: 14px; font-weight: 400;
+    }
+    .mehedi_info{
+        width: 327px; height: 550px; 
+        display: flex; align-items: center;
+        justify-content: center ; text-align: center;
+        flex-direction: column;
+    }
+    .itemm17{
+        color:#D1D5DB; font-size: 18px; font-weight: 400;
+    }
+    .social_media{
+        width: 375px; height: 120px;
+    }
+    .social_media_banner{
+        width: 375px; height: 30px ;
+        justify-content: center; align-items: center ; text-align: center;
+        color: white; display: flex;
+    }
+    .itemm19{
+        font-size: 18px ; font-weight: 400 ;
+    }
+    .social_media_item{
+        width: 375px; height: 90px; 
+        justify-content: center; align-items: center; text-align: center;
+        display: flex;
+    }
+    .itemm20{
+        width: 26px; 
+        height: 26px;
+        display: flex;
+        padding: 10px;
+    }
+
+</style>
+<body>
+    <div class = container>
+        <div class = container_small >
+            <div class = navbar >
+                <div class = logo >
+                    <img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Logo.png"/>
+                </div>
+                <div class = button1>
+                    <a class="item">Menu</a> 
+                    <a class="item"><img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Icon.png"/></a> 
+                </div>
+            </div>
+            <div class = "banner">
+                <div class = "title">
+                    <div>
+                         <h1>Crafting Memorable<br/>User Experiences for<br/>Business Success</h1>
+                         <p>
+                         I blend exquisite design with impeccable <br/>functionality for an exceptional
+                         user <br/>experience, while keeping users <br/>captivated. 
+                         </p>
+
+                        <div class="play-button">
+                         <img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Play.png"/>
+                        </div>
+                   </div>
+                </div>
+           </div>
+           <div class = my_work>
+                 <div class = mu_work_0>
+                    <div class = my_work_info>
+                        <h2>My Work</h2>
+                        <p>Here are some of my design works that 
+                        <br> showcase my design skills and expertise
+                        <br> Click on each project to see.</p>
+                    </div>
+
+                    <div class = my_work_button>
+                        <span class="tag yellow"><img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Frame (2).png"/> Visual Design</span>
+                        <span class="tag blue"> <img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Frame (3).png"/>Case Study</span>
+                        <span class="tag blue2"><img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Frame (4).png"/> Projects</span>
+                    </div>
+
+
+                 </div>
+
+
+                 <div class = my_work_img>
+                    <a class = item2 ><img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Rectangle 22 (1).png" alt="Design1"></a>
+                        <div class = text1>
+                            <p>Personal Portfolio Website <br> Hero Design Concept</p>
+                            <a class = item3 ></a><img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\btn (1).png"></a>
+                        </div>
+
+                    <a class = item2 ><img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Rectangle 22 (4).png" alt="Design2"></a>
+                        <div class = text2>
+                            <p>Personal Portfolio Website <br> Hero Design Concept</p>
+                            <a class = item3 ></a><img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\btn (1).png"></a>
+                        </div>   
+
+                    <a class = item2 ><img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Rectangle 22 (2).png" alt="design3"></a>
+                        <div class = text3>
+                            <p>Personal Portfolio Website <br> Hero Design Concept</p>
+                            <a class = item3 ></a><img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\btn (1).png"></a>
+                        </div>
+
+
+                 </div>
+                     <div class = my_work_button0>
+                        <span class="item4"><img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Btn (2).png"/></span>
+
+                    </div>
+           </div>
+            <div class = kind_words>
+
+                <div class = title2 >
+                    <div>
+                    <h2> Kind Words</h2>
+
+                    <p>See what my clients have to say about <br> working with me</p>
+                    </div>
+                </div>
+
+
+                <div class = space1></div>
+
+
+                
+
+                <div class = all_comment >
+
+
+                    <div class = harald_pfeifer>
+                        <p>His quality of work is excellent! I <br>
+                         prefer Mehedi in every important <br>
+                         work of design. He is working fast, <br>
+                         clean and present great usability <br>
+                         results.</p>
+                        <h3>Harald Pfeifer</h3>
+                    </div>
+
+                    <div class = space2></div>
+
+
+
+                    <div class = valenthino>
+                        <p>I couldn't ask for a better Designer. Communication was 200% 
+                        <br> and this went above my expectations. 
+                        <br><br> He threw in some additional perks for me. I will definitely be
+                        <br> working with him for future projects. Happy and very  
+                        <br> satisfied customer</p>
+                        <h3>Valenthino</h3>
+                     </div>
+
+
+                     <div class = space3></div>
+                        
+
+                     <div class = geoff_crutcher>
+                        <p>Mehedi has worked with us on many
+                        <br>projects and has always come 
+                        <br>through. Mehedi is professional with 
+                        <br>an eye for detail and makes his
+                        <br>deadlines. 
+
+                        <br><br>His work is always outstanding and
+                        <br>uses a lot of his own creativity and
+                        <br>understands us and our projects with 
+                        <br>simple direction. 
+
+                        <br><br>He is easy to work with an responds
+                        <br>quickly to any request we have ever
+                        <br>had.</p>
+                        <h3>Geoff Crutcher</h3>
+                    </div>
+
+
+
+                    <div class = space4 ></div>
+
+
+
+                    <div class = score >
+
+                       <a class = item5><img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Content.png" ></a>
+
+                    </div>
+                    
+                </div>
+
+
+
+            </div>
+            <div class = sources >
+                <div class = sources_1>
+                    <div class = sources_info>
+                        <h2>Blog & Resources</h2>
+                        <p>I love to write whenever i can. Here is 
+                        <br>some of my blog and resources for the
+                        <br>designers and developers.</p>
+                    </div>
+
+                    <div class = space5 ></div>
+
+                    <div class = sources_img>
+                        <img src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Rectangle 22.png"></a>
+                    </div>
+                    
+                    <div class = sources_img_button>
+                        <p class = itemm10>How to plan and manage project <br> like pro?</p>
+                        <img class = itemm11 src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\btn (1).png" >
+                    </div>
+
+                </div>
+
+                <div class = sources_button>
+                    <img class = itemm12 src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Btn (2).png" >
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class = mehedi_hasan>
+                <div class = my_story>
+                    <p class = itemm13>My Long <br> Story Short</p>
+                </div>
+                <div class = all_story>
+                    <div class = mehedi_img>
+                        <img class = itemm14 src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Image.png" >
+                    </div>
+                    <div class = mehedi_name>
+                        <p class = itemm15>Mehedi Hasan</p>
+                        <p class = itemm16>UX UI Designer, Mentor and <br> Content Creator at Youtube @Mehedihas</p>
+                    </div>
+                    <div class = mehedi_info>
+                        <p class = itemm17>Growing up in a small village without 
+                        <br> access to the internet or the latest 
+                        <br> technology sparked my curiosity for 
+                        <br> computers. I began learning Photoshop in 
+                        <br> a photo studio where I paid for.
+                        <br>
+                        <br> My love for gaming led me to play FPS 
+                        <br> video games like PUBG and Valorant, 
+                        <br> which taught me valuable skills in making
+                        <br> critical decisions under pressure. When
+                        <br> I'm not gaming, I enjoy unwinding with 
+                        <br> Netflix.
+                        <br>
+                        <br> As a former cricket team captain, I gained 
+                        <br> valuable teamwork and empathy skills
+                        <br> that have helped me contribute positively
+                        <br> to any situation. 
+                        <br>
+                        <br> Now, I'm passionate about helping others, 
+                        <br> and I'm working to build a Designer
+                        <br> Community to assist new designers in
+                        <br> their journey to success.</p>
+                        <img class = itemm18 src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Btn.png" >
+                    </div>
+
+                </div>
+            </div>
+            <div class = social_media>
+                <div class = social_media_banner>
+                    <p class =itemm19>MehediHas © 2023</p>
+                </div>
+                <div class = social_media_item>
+                    <img class = itemm20 src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Social media icons.png">
+                    <img class = itemm20 src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Social media icons (6).png">
+                    <img class = itemm20 src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Social media icons (1).png">
+                    <img class = itemm20 src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Social media icons (3).png">
+                    <img class = itemm20 src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Social media icons (4).png">
+                    <img class = itemm20 src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Social media icons (5).png">
+                    <img class = itemm20 src="c:\Users\Rojin TOKDEMİR\OneDrive\Desktop\İCON\PERSONAL_PORTFOLİO\Social media icons (5).png">
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>      
